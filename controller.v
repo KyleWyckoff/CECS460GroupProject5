@@ -40,10 +40,7 @@ always @(posedge clk)begin
     adder = adder + multiplier;
     if(equationFlag == 1) begin
         A <= adder;
-        //B <= 0;
-    end
-    else begin
-        //A <= 0;
+    end else begin
         B <= adder;
     end
 end
